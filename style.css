@@ -1,0 +1,29 @@
+header{
+    height: 15vh;
+
+}
+
+footer{
+    height: 10vh;
+
+}
+
+main{
+    min-height: 75vh;
+    background-color: bisque;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+.logo{
+    width: 45%;
+    height: 100%;
+}
+
+.emplacement{
+    margin-left: 10px;
+    
+    height: 70vh;
+    width: 30vh;
+    border: 1px solid;
+}
