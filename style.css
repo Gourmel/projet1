@@ -1,7 +1,24 @@
-header{
-    height: 15vh;
+ header{ 
+    height: 15vh; 
+     position: relative; 
+ 
+    
 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(rgb(174, 150, 172) 10%, 60%, #d3d3d3 100%);
+  }
+
+.titre{
+    height: 120px;
+    margin-left: 130px;
+    margin-top: 10px;
+    text-align: center;
+    
 }
+
 
 footer{
     height: 10vh;
@@ -16,9 +33,13 @@ main{
 }
 
 .logo{
-    width: 45%;
+    width: 35%;
     height: 100%;
+    position: absolute;
 }
+
+
+
 
 .emplacement{
     margin-left: 10px; 
@@ -26,15 +47,10 @@ main{
     width: 25vh;
     border: 1px solid;
 }
+.li{ 
+   display: inline; 
+   margin-right: 200px; 
+   margin-top: 20px;
+   list-style-type: none; 
 
-.nav{
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    
 }
-.menu {
-    
-  }
