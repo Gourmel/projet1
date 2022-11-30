@@ -22,17 +22,18 @@
 
 footer{
     height: 10vh;
+    display: flex;
 
 }
 
 main{
     display: flex;
-   align-items: flex-start;
+    align-items: flex-start;
     min-height: 75vh;
     background-color: bisque;
-    padding-top: 15px;
+    padding-top: 80px; 
     box-sizing: border-box;
-    padding-top: 40px;
+  
 }
 
 .logo{
@@ -61,22 +62,25 @@ main{
 
 #grandePhoto{
     margin-left: 50px;
-    
-
-    
-    
     height: 170px;
     width: 170px;
     border: 2px solid;
     background-color: transparent;
+    border-radius: 50%;
+}
 
-
-    
-     
+#paragraphe{
     
     
-    
-   
+    margin-top: 200px;
+    border: 2px;
+}
+#annuaire{
+    padding-top: 30px;
+    background-color: aliceblue;
+    border: 3px;
+    height: 60px;
+    width: 170px;
 }
 
 
@@ -91,5 +95,92 @@ main{
 img{
     width: 60px; 
     height: 60px;
-    object-fit: contain;
+    /* object-fit: contain; */
 }
+
+.boutonAppel {
+    margin-right: 59.2px;
+
+    
+    line-height: 2.5;
+    padding: 12px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(167, 239, 11);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+                
+}
+
+.boutonAppel:hover {
+    background-color: rgb(153, 0, 255);
+}
+
+#boutonAppel:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
+.boutonMail {
+
+
+    border: 1px;
+    
+    line-height: 2.5;
+    padding: 12px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(219, 134, 134);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+                
+}
+
+#boutonMail:hover {
+    background-color: rgba(123, 21, 124, 0.852);
+}
+
+#boutonMail:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(79, 36, 36, 0.6);
+}
+
+
+.boutonSortie {
+    padding-right: 1px;
+    
+
+    
+    line-height: 2.5;
+    padding: 12px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(167, 239, 11);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+                
+}
+
+.boutonSortie:hover {
+    background-color: rgb(153, 0, 255);
+}
+
+#boutonSortie:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
