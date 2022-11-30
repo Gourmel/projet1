@@ -26,10 +26,13 @@ footer{
 }
 
 main{
+    display: flex;
+   align-items: flex-start;
     min-height: 75vh;
     background-color: bisque;
     padding-top: 15px;
     box-sizing: border-box;
+    padding-top: 40px;
 }
 
 .logo{
@@ -41,16 +44,52 @@ main{
 
 
 
-.emplacement{
-    margin-left: 10px; 
-    height: 70vh;
-    width: 25vh;
-    border: 1px solid;
+.emplacement1{
+  display: flex;
+  flex-direction: column;
+  
+  overflow: hidden; 
+
+ 
+  margin-left: 10px; 
+  height: 60vh;
+  width: 60px;
+  border: 3px solid;
+  
+ 
 }
+
+#grandePhoto{
+    margin-left: 50px;
+    
+
+    
+    
+    height: 170px;
+    width: 170px;
+    border: 2px solid;
+    background-color: transparent;
+
+
+    
+     
+    
+    
+    
+   
+}
+
+
 .li{ 
    display: inline; 
    margin-right: 200px; 
    margin-top: 20px;
    list-style-type: none; 
 
+}
+
+img{
+    width: 60px; 
+    height: 60px;
+    object-fit: contain;
 }
