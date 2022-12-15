@@ -1,6 +1,6 @@
  
  
- /* @media (max-width: 600px) { */
+ 
     
  
  header{ 
@@ -83,6 +83,7 @@ footer{
 
   position: absolute;
   display: flex;
+  
   flex-direction: column;
   align-items: center;
   overflow: hidden; 
@@ -95,11 +96,12 @@ footer{
 }
 
 .grandePhoto{
-
+    display:flex;
+    flex-wrap: wrap;
     box-shadow: 0px 15px 10px -5px #777;
     background-color: #EDEDED;
     background-size: contain;
-    animation: fondu 60s ease-in-out infinite both;
+    animation: fondu 60s ease-in-out infinite both; 
     margin-bottom: 60px;
     margin-left: 103px;
     height: 200px;
@@ -109,15 +111,15 @@ footer{
 }
 .conteneur{ 
 
-    max-width: 500px;
-    margin: 50px auto;
+    max-width: 50px;
+    margin: 50px;
 } 
 
 .grandePhoto2{
     
     box-shadow: 0px 1px 10px rgb(141, 53, 53);
     background-color: #504141;
-    /* background-size: contain; */
+    background-size: contain; 
     animation: fondu 5s ease-in-out infinite both;
 }
 
@@ -159,21 +161,14 @@ footer{
     border: 2px;
 }
 
-.li{ 
-
-   display: inline; 
-   margin-right: 200px; 
-   margin-top: 20px;
-   list-style-type: none; 
-
-}
-
 
 img{ 
 
     width: 60px; 
     height: 60px;
- 
+    object-fit: cover;
+    object-position: 50% ;
+
 } 
 
 #annuaire{
@@ -184,7 +179,8 @@ img{
     flex-wrap:wrap;
     align-content: center;
     flex-direction: column;
-    border: 2px solid #a07f6e;
+    border: 2px solid #343538;
+    border-radius: 20px;
 
 }
 
@@ -208,9 +204,8 @@ img{
 
 .boutonMail {
 
-    /* margin-right: 20px; */
-    border: 1px;
     
+    border: 1px;
     line-height: 2.5;
     padding: 12px;
     font-size: 1rem;
@@ -241,9 +236,39 @@ img{
                 
 }
 
+.youssef, .alicia, .himed, .alioune, .ahmid, .sebastien, .alexandre, .mustapha, .cedric1,
+.cedric2, .eric1, .nicolas1, .laurie, .mohamed, .nicolas2, .razzak, .samy, .eric2, .sandra{
+    padding-left: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border:black solid;
+}
 
 
 
 
- /* SITE VERSION DESKTOP */
-/* @media (min-width: 768px) { */
+
+
+
+ /* SITE VERSION DESKTOP*/ 
+ @media (min-width: 768px) {
+
+    img{
+        width: 300px; 
+        height: 300px;
+         
+        } 
+
+        .emplacement_photo_miniature{
+
+           
+            margin-left: 10px; 
+            margin-top: 15px;
+            height: 750px;
+            width: 150px;
+           
+          }
+    }
+    
