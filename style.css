@@ -14,25 +14,34 @@
     background: linear-gradient(rgb(136, 100, 119) 10%, 60%, #d3d3d3 100%);
   }
 
+.logo{
 
-
-.titre{
-
+    width: 30%;
     height: 100%;
-    padding-top:10px;
-    text-align: center;
-    box-sizing: border-box;
-    
+   
 }
 
 
-footer{
-    width: 70%;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    background-color: #504141;
+h1{
 
+    display:flex;
+    align-items: center;
+    margin: 10px;
+    font-weight: bold;
+    
+}
+
+p{
+    color:white;
+    margin: 10px;
+}
+
+h2{
+
+    color:#a07f6e;
+    font-weight: bold;
+    margin: 20px;
+    padding: 20px;
 }
 
 main{
@@ -40,20 +49,20 @@ main{
     display: flex;
     align-items: flex-start;
     min-height: 75vh;
-    background-color:rgb(162, 119, 133);
+    background-color:#513830;
     padding-top: 80px; 
-    box-sizing: border-box;
-  
+    box-sizing: border-box; 
 }
 
-.logo{
+footer{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#ada576;
 
-    width: 30%;
-    height: 100%;
-    /* position: absolute; */
-
-    
 }
+
+
 
 
 .flecheHaut{
@@ -70,9 +79,6 @@ main{
     opacity: 0.1; 
 }
 
-
-
-
 .emplacement_photo_miniature{
 
   position: absolute;
@@ -82,59 +88,49 @@ main{
   overflow: hidden; 
   margin-left: 10px; 
   margin-top: 15px;
-  
   height: 350px;
   width: 50px;
-  border: 2px solid; 
-  
+  border: 2px solid;  
  
 }
 
 .grandePhoto{
 
-    
-    
     box-shadow: 0px 15px 10px -5px #777;
     background-color: #EDEDED;
     background-size: contain;
     animation: fondu 60s ease-in-out infinite both;
-
-
-
-    margin-bottom: 30px;
-   
-    margin-left: 75px;
+    margin-bottom: 60px;
+    margin-left: 103px;
     height: 200px;
     width: 200px;
     border: 2px solid;
-    
-    
     border-radius:50%;
-
 }
 .conteneur{ 
+
     max-width: 500px;
     margin: 50px auto;
 } 
 
 .grandePhoto2{
     
-    
     box-shadow: 0px 1px 10px rgb(141, 53, 53);
     background-color: #504141;
     /* background-size: contain; */
     animation: fondu 5s ease-in-out infinite both;
-
-
 }
+
 .grandePhoto:hover, .grandePhoto2:hover{
+
     animation-play-state: paused;
 }
+
 @keyframes fondu{
+
     5%{background-image: url("photos/photo36.JPG");}
     10%{background-image: url("photos/photo37.JPG");}
     15%{background-image: url("photos/photo38.JPG");}
-    
     20%{background-image: url("photos/photo21.JPG");}
     25%{background-image: url("photos/photo22.JPG");}
     30%{background-image: url("photos/photo23.JPG");}
@@ -149,17 +145,10 @@ main{
     75%{background-image: url("photos/photo32.JPG");}
     80%{background-image: url("photos/photo33.JPG");}
     85%{background-image: url("photos/photo34.JPG");}
-    
     90%{background-image: url("photos/photo35.JPG");}
     95%{background-image: url("photos/photo2.JPG");}
-    
     100%{background-image: url("photos/photo20.JPG");}
 }
-
-
-
-
- 
 
 .commentaire{
     
@@ -169,11 +158,6 @@ main{
     margin-bottom: 20px;
     border: 2px;
 }
-
-
-
-
-
 
 .li{ 
 
@@ -185,31 +169,29 @@ main{
 }
 
 
-
- img{ 
+img{ 
 
     width: 60px; 
     height: 60px;
  
- } 
+} 
+
 #annuaire{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 30px;
-    margin-bottom: 40px;
+
+    margin: 20px;
     border: 2px;
-    
-    }
+    display:flex;
+    flex-wrap:wrap;
+    align-content: center;
+    flex-direction: column;
+    border: 2px solid #a07f6e;
+
+}
 
 
 
 .boutonAppel {
 
-
-
-    /* margin-right: 40px; */
-
-    
     line-height: 2.5;
     padding: 12px;
     font-size: 1rem;
@@ -223,11 +205,6 @@ main{
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
                 
 }
-
-
-
-
-
 
 .boutonMail {
 
@@ -248,14 +225,8 @@ main{
                 
 }
 
-
-
-
-
-
 .boutonSortie {
-    /* margin-right: 30px; */
-    /* margin-left: 0px; */
+  
     line-height: 2.5;
     padding: 12px;
     font-size: 1rem;
