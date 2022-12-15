@@ -1,3 +1,8 @@
+ 
+ 
+ /* @media (max-width: 600px) { */
+    
+ 
  header{ 
 
 
@@ -6,25 +11,27 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: linear-gradient(rgb(174, 150, 172) 10%, 60%, #d3d3d3 100%);
+    background: linear-gradient(rgb(136, 100, 119) 10%, 60%, #d3d3d3 100%);
   }
 
 
 
 .titre{
 
-    height: 120px;
-    margin-left: 130px;
-    margin-top: 10px;
+    height: 100%;
+    padding-top:10px;
     text-align: center;
+    box-sizing: border-box;
     
 }
 
 
 footer{
-
+    width: 70%;
     height: 10vh;
     display: flex;
+    justify-content: space-between;
+    background-color: #504141;
 
 }
 
@@ -33,7 +40,7 @@ main{
     display: flex;
     align-items: flex-start;
     min-height: 75vh;
-    background-color: bisque;
+    background-color:rgb(162, 119, 133);
     padding-top: 80px; 
     box-sizing: border-box;
   
@@ -41,85 +48,131 @@ main{
 
 .logo{
 
-    width: 35%;
+    width: 30%;
     height: 100%;
-    position: absolute;
+    /* position: absolute; */
+
+    
 }
 
 
-.fleche1{
+.flecheHaut{
     width: 100%;
     position: absolute;  
     top : 0px;
-    /* opacity: 0.5; */
+    opacity: 0.1;  
 
 }
-.fleche2{
+.flecheBas{
     width: 100%;
     position: absolute; 
     bottom : 0px; 
-    /* opacity: 0.5; */
-}
-
-.emplacement_fleches{
-    position: relative; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden; 
-    margin-left: 20px; 
-    margin-bottom: 60px;
-    height: 610px;
-    width: 60px;
-    border: 2px solid;
-    border-radius: 15px;
+    opacity: 0.1; 
 }
 
 
-.emplacement1{
 
-  position:absolute ;
+
+.emplacement_photo_miniature{
+
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden; 
-  margin-left: 0px; 
-  margin-top: 55px;
+  margin-left: 10px; 
+  margin-top: 15px;
   
-  height: 500px;
-  width: 60px;
-  /* border: 1px solid; */
+  height: 350px;
+  width: 50px;
+  border: 2px solid; 
   
  
 }
 
-#grandePhoto{
+.grandePhoto{
+
+    
+    
+    box-shadow: 0px 15px 10px -5px #777;
+    background-color: #EDEDED;
+    background-size: contain;
+    animation: fondu 60s ease-in-out infinite both;
 
 
-    margin-left: 50px;
-    height: 170px;
-    width: 170px;
+
+    margin-bottom: 30px;
+   
+    margin-left: 75px;
+    height: 200px;
+    width: 200px;
     border: 2px solid;
-    background-color: transparent;
-    border-radius: 50%;
+    
+    
+    border-radius:50%;
+
+}
+.conteneur{ 
+    max-width: 500px;
+    margin: 50px auto;
+} 
+
+.grandePhoto2{
+    
+    
+    box-shadow: 0px 1px 10px rgb(141, 53, 53);
+    background-color: #504141;
+    /* background-size: contain; */
+    animation: fondu 5s ease-in-out infinite both;
+
+
+}
+.grandePhoto:hover, .grandePhoto2:hover{
+    animation-play-state: paused;
+}
+@keyframes fondu{
+    5%{background-image: url("photos/photo36.JPG");}
+    10%{background-image: url("photos/photo37.JPG");}
+    15%{background-image: url("photos/photo38.JPG");}
+    
+    20%{background-image: url("photos/photo21.JPG");}
+    25%{background-image: url("photos/photo22.JPG");}
+    30%{background-image: url("photos/photo23.JPG");}
+    35%{background-image: url("photos/photo24.JPG");}
+    40%{background-image: url("photos/photo25.JPG");}
+    45%{background-image: url("photos/photo26.JPG");}
+    50%{background-image: url("photos/photo27.JPG");}
+    55%{background-image: url("photos/photo28.JPG");}
+    60%{background-image: url("photos/photo29.JPG");}
+    65%{background-image: url("photos/photo30.JPG");}
+    70%{background-image: url("photos/photo31.JPG");}
+    75%{background-image: url("photos/photo32.JPG");}
+    80%{background-image: url("photos/photo33.JPG");}
+    85%{background-image: url("photos/photo34.JPG");}
+    
+    90%{background-image: url("photos/photo35.JPG");}
+    95%{background-image: url("photos/photo2.JPG");}
+    
+    100%{background-image: url("photos/photo20.JPG");}
 }
 
-#paragraphe{
+
+
+
+ 
+
+.commentaire{
     
-    
-    margin-top: 200px;
+    margin-left: 75px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     border: 2px;
 }
 
 
 
-/* #annuaire{ */
-    /* padding-top: 30px; */
-    /* background-color: aliceblue; */
-    /* border: 3px; */
-    /* height: 60px; */
-    /* width: 170px; */
-/* } */
+
 
 
 .li{ 
@@ -133,12 +186,20 @@ main{
 
 
 
-img{
+ img{ 
 
     width: 60px; 
     height: 60px;
-    /* object-fit: contain;  */
-}
+ 
+ } 
+#annuaire{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    border: 2px;
+    
+    }
 
 
 
@@ -146,7 +207,7 @@ img{
 
 
 
-    margin-right: 65px;
+    /* margin-right: 40px; */
 
     
     line-height: 2.5;
@@ -165,19 +226,12 @@ img{
 
 
 
-/* .boutonAppel:hover { */
-    /* background-color: rgb(153, 0, 255); */
-/* } */
 
-#boutonAppel:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
 
 
 .boutonMail {
 
-    margin-right: 58px;
+    /* margin-right: 20px; */
     border: 1px;
     
     line-height: 2.5;
@@ -185,30 +239,23 @@ img{
     font-size: 1rem;
     text-align: center;
     color: #fff;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: 1px 1px 1px #000; 
     border-radius: 10px;
     background-color: rgb(219, 134, 134);
-    background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), 
+                inset -2px -2px 3px rgba(0, 0, 0, .6); 
                 
 }
 
 
 
-#boutonMail:hover {
-    background-color: rgba(123, 21, 124, 0.852);
-}
 
-
-#boutonMail:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(79, 36, 36, 0.6);
-}
 
 
 .boutonSortie {
-    
+    /* margin-right: 30px; */
+    /* margin-left: 0px; */
     line-height: 2.5;
     padding: 12px;
     font-size: 1rem;
@@ -225,15 +272,7 @@ img{
 
 
 
-.boutonSortie:hover {
-    background-color: rgb(153, 0, 255);
-}
 
 
-
-#boutonSortie:active {
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
-
-
+ /* SITE VERSION DESKTOP */
+/* @media (min-width: 768px) { */

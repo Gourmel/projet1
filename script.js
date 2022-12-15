@@ -6,13 +6,13 @@
 // photo devient 0
 
 const photos = document.querySelectorAll(".photo");
-const flecheHaute = document.querySelector(".fleche1");
-const flecheBas = document.querySelector(".fleche2");
+const flecheDuHaut = document.querySelector(".flecheHaut");
+const flecheDuBas = document.querySelector(".flecheBas");
 
 let index=0;
 
 
-flecheHaute.addEventListener("click",function(){
+flecheDuHaut.addEventListener("click",function(){
     if(index < photos.length -1 ){
     photos[index].style.height = '0';
     index++;
@@ -20,7 +20,7 @@ flecheHaute.addEventListener("click",function(){
 });
 
 
-flecheBas.addEventListener("click",function(){
+flecheDuBas.addEventListener("click",function(){
     if(index > 0){
         index--;
         photos[index].style.height = '100%';
@@ -28,3 +28,12 @@ flecheBas.addEventListener("click",function(){
     
     
 });
+
+
+
+
+
+
+
+
+
