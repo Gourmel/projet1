@@ -1,15 +1,17 @@
  
- 
+ body {
+    width: 100vw;
+    height: 100vh;
+    background-color:#513830;
+ }
  
     
  
  header{ 
-
-
+    width: 100%;
     height: 15vh; 
     position: relative; 
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     background: linear-gradient(rgb(136, 100, 119) 10%, 60%, #d3d3d3 100%);
   }
@@ -24,8 +26,7 @@
 
 h1{
 
-    display:flex;
-    align-items: center;
+   
     margin: 10px;
     font-weight: bold;
     
@@ -46,11 +47,9 @@ h2{
 
 main{
 
-    display: flex;
-    align-items: flex-start;
-    min-height: 75vh;
+    width: 100vw;
     background-color:#513830;
-    padding-top: 80px; 
+    padding-top: 30px; 
     box-sizing: border-box; 
 }
 
@@ -65,47 +64,62 @@ footer{
 
 
 
-.flecheHaut{
-    width: 100%;
-    position: absolute;  
-    top : 0px;
-    opacity: 0.1;  
 
-}
-.flecheBas{
-    width: 100%;
-    position: absolute; 
-    bottom : 0px; 
-    opacity: 0.1; 
-}
-
-.emplacement_photo_miniature{
-
-  position: absolute;
-  display: flex;
-  
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden; 
-  margin-left: 10px; 
-  margin-top: 15px;
-  height: 350px;
-  width: 50px;
-  border: 2px solid;  
+.sectionHaut {
+    width: 90%;
+    display: flex;
+    padding: 10px;
+   
  
 }
 
+.photoRondPara {
+    width: 60%;
+    
+}
+.emplacement_photo_miniature{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+  height: 350px;
+  width: 250px;
+  border: 2px solid; 
+  margin-right: 20px;
+  position: relative; 
+ 
+}
+.flecheHaut{
+    width: 50%;
+    position: absolute;  
+    top : 0px;
+    z-index: 100;
+    opacity: 1;  
+
+}
+.flecheHaut img {
+    width: 50px;
+}
+.flecheBas{
+    width: 50%;
+    position: absolute; 
+    bottom : 0px; 
+    opacity: 1;
+    transform: rotate(180deg); 
+}
+.flecheBas img {
+    width: 50px;
+}
+
 .grandePhoto{
-    display:flex;
-    flex-wrap: wrap;
+    
     box-shadow: 0px 15px 10px -5px #777;
     background-color: #EDEDED;
     background-size: contain;
     animation: fondu 60s ease-in-out infinite both; 
-    margin-bottom: 60px;
-    margin-left: 103px;
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
     border: 2px solid;
     border-radius:50%;
 }
@@ -154,10 +168,7 @@ footer{
 
 .commentaire{
     
-    margin-left: 75px;
-    margin-right: 10px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+  
     border: 2px;
 }
 
@@ -172,8 +183,9 @@ img{
 } 
 
 #annuaire{
-
-    margin: 20px;
+    
+    
+    margin: auto;
     border: 2px;
     display:flex;
     flex-wrap:wrap;
@@ -240,8 +252,8 @@ img{
 .cedric2, .eric1, .nicolas1, .laurie, .mohamed, .nicolas2, .razzak, .samy, .eric2, .sandra{
     padding-left: 10px;
     padding-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     border-radius: 10px;
     border:black solid;
 }
@@ -255,20 +267,92 @@ img{
  /* SITE VERSION DESKTOP*/ 
  @media (min-width: 768px) {
 
+    .sectionHaut {
+        width: 80%;
+     
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+    }
+    .photoRondPara{
+       
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+    }
+    .grandePhoto {
+        width: 600px;
+        height: 600px;
+    }
+    .commentaire {
+        font-size: 20px;
+        text-align: justify;
+        height: 200px;
+        width: 600px;
+    } 
     img{
         width: 300px; 
         height: 300px;
          
         } 
 
-        .emplacement_photo_miniature{
-
+    .emplacement_photo_miniature{
+        width: 200px;
+        height: 100vh;
+        z-index: 1;
            
-            margin-left: 10px; 
-            margin-top: 15px;
-            height: 750px;
-            width: 150px;
+            
            
-          }
+         }
+         .flecheHaut{
+            width: 100px;
+             z-index: 1;
+            top : 0px;
+            position: absolute; 
+            opacity: 1;  
+        
+        }
+        .flecheHaut img {
+            width: 50px;
+            height: 100px;
+            z-index: 10000;
+            
+        }
+        .flecheBas{
+            width: 100px;
+            position: absolute; 
+            bottom : 0px; 
+            opacity: 1;
+            transform: rotate(180deg); 
+        }
+        .flecheBas img {
+            width: 100px;
+            height: 100px;
+        }
+        #annuaire {
+            width: 1600px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+           
+            
+            
+            
+        }
+        .annu {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: space-around;
+            gap: 20px;
+           
+        }
+        .youssef, .alicia, .himed, .alioune, .ahmid, .sebastien, .alexandre, .mustapha, .cedric1,
+.cedric2, .eric1, .nicolas1, .laurie, .mohamed, .nicolas2, .razzak, .samy, .eric2, .sandra {
+    width: 400px;
+   
+}
     }
     
